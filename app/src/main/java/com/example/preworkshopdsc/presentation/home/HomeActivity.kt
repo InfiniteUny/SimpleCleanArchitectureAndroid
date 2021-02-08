@@ -7,8 +7,9 @@ import com.example.preworkshopdsc.R
 import com.example.preworkshopdsc.abstraction.BaseActivity
 import com.example.preworkshopdsc.data.vo.Result
 import com.example.preworkshopdsc.databinding.ActivityHomeBinding
-import timber.log.Timber
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class HomeActivity : BaseActivity<ActivityHomeBinding, HomeViewModel>() {
     override fun getLayoutResourceId(): Int = R.layout.activity_home
     override fun getViewModelClass(): Class<HomeViewModel> = HomeViewModel::class.java

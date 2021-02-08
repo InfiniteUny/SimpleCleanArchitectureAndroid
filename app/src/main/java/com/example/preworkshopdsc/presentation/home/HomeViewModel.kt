@@ -1,5 +1,6 @@
 package com.example.preworkshopdsc.presentation.home
 
+import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -13,7 +14,7 @@ import com.example.preworkshopdsc.domain.usecase.GetTvOnTheAirUseCase
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-class HomeViewModel @Inject constructor(
+class HomeViewModel @ViewModelInject constructor(
     private val getMovieNowPlayingUseCase: GetMovieNowPlayingUseCase,
     private val getTvOnTheAirUseCase: GetTvOnTheAirUseCase
 ) : ViewModel() {

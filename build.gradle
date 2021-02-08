@@ -11,6 +11,8 @@ buildscript {
         glide_version = '4.11.0'
         timber_version = '4.7.1'
         gradle_plugin_version = '3.5.0'
+        dagger_hilt = '2.28-alpha'
+        hiltViewModel = '1.0.0-alpha01'
     }
     repositories {
         google()
@@ -19,7 +21,8 @@ buildscript {
     dependencies {
         classpath "com.android.tools.build:gradle:4.1.1"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-
+        //dagger hilt
+        classpath 'com.google.dagger:hilt-android-gradle-plugin:2.28-alpha'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
