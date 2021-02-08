@@ -12,7 +12,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
-import dagger.android.support.AndroidSupportInjection
 import javax.inject.Inject
 
 abstract class BaseFragment<out B : ViewDataBinding, V : ViewModel> : Fragment() {
@@ -27,7 +26,7 @@ abstract class BaseFragment<out B : ViewDataBinding, V : ViewModel> : Fragment()
     private lateinit var mViewDataBinding: B
 
     override fun onAttach(context: Context) {
-        AndroidSupportInjection.inject(this)
+//        AndroidSupportInjection.inject(this)
         super.onAttach(context)
     }
 
